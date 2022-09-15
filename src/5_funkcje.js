@@ -278,3 +278,32 @@
 // var max = function(list){
 //  return Math.max(...list)
 //   }
+
+
+//ANONIMOWE
+
+//Utwórz 3 anonimowe funkcje, każda z nich powinna pisać tylko wiadomość w konsoli ("more than zero" / "equal to zero" / "less than zero").
+
+let more = function(){
+  console.log("more then zero")
+  }
+
+let equal = function(){
+  console.log("equal to zero")
+}
+
+let less = function(){
+  console.log("less then zero")
+}
+
+//Napisz program wywołujący jedną z tych 3 funkcji, gdy warunek jest spełniony (wartość jakiejś zmiennej jest większa od zera / równa zero / mniejsza od zera).
+
+let something = 2;
+
+if (something > 0){
+  more();
+} else if (something === 0){
+  equal();
+} else {
+  less()
+}
