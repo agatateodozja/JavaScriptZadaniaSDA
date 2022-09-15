@@ -252,3 +252,63 @@
 
 // shop.buy();
 
+// Stwórz obiekt: samochód. Ma pewne właściwości: markę, model, cenę początkową, końcową, wiek. Napisz kilka funkcji, które działają na tym obiekcie:
+
+// Funkcja konstruktora, która tworzy obiekt Car i wypełnia go pewnymi danymi początkowymi.
+
+// function Car(brand, model, price, age){
+
+//   this.brand = brand;
+//   this.model = model;
+//   this.startPrice = price;
+//   this.age = age;
+//   this.endPrice = 0;
+
+
+// // Funkcja zliczająca cenę końcową, zmniejszając cenę startową o 1000 za każdy rok wieku samochodu.
+
+// this.countPrice = function(){
+//   this.endPrice = this.startPrice - (1000 * this.age);
+// }
+
+// // Funkcja zwiększająca cenę startową o podaną wartość.
+
+// this.increasePrice = function(amount){
+//   this.startPrice += amount;
+// }
+
+// // Funkcja sprawdzająca czy cena końcowa mieści się w podanym przedziale.
+
+// this.isInRange = function(a, b){
+//   if(this.endPrice >= a && this.endPrice <= b){
+//     return true
+//   } else{
+// return false;
+//   }
+// }
+
+// // Funkcja kopiująca obiekt (aby mieć dwa podobne samochody, a nie tylko jeden).
+
+// this.copy = function(){
+//   let secondCar = new Car(this.brand, this.model, this.startPrice, this.age);
+//   return secondCar;
+// }
+
+// }
+
+// let auto = new Car("nissan","quashai",100000,3);
+
+// auto.countPrice();
+//   console.log(auto.endPrice)
+
+
+// auto.increasePrice(1000);
+// console.log(auto.startPrice)
+
+// console.log(auto.isInRange(20000,40000));
+// let auto2 = auto.copy();
+
+// auto.brand = 'changed';
+
+// console.log(auto);
+// console.log(auto2)
